@@ -16,7 +16,7 @@ def defaults
   }
 end
 
-@config = defaults.merge(YAML.load_file('../config.yml'))
+@config = defaults.merge(YAML.load_file('../config.yml.example'))
 
 #configure Trello
 Trello::Authorization.const_set(:AuthPolicy, OAuthPolicy)

@@ -1,0 +1,19 @@
+
+:trello:
+   #get these here https://trello.com/1/appKey/generate
+  :public_key: 473ed4ae6c15c73f90654c026bd706dc
+
+   #get these here https://trello.com/1/appKey/generate
+  :secret_key: 8b0a7b85905145bf032c791a6de97ec7ed9a9ce23f7477eb4dbce230beddd73a
+
+   # https://trello.com/docs/gettingstarted/index.html#token   #used for accessing private board data or getting specific permissions. needed on a per-board basis
+  :token:
+
+   #trelly board
+   :boards:
+    - 'xxxxxxxxxxxxxxxxxxxxx'
+
+:rally:
+  :username:   #rally username
+  :password:   #rally password
+  :workspace:  "Sandbox - practice here"
