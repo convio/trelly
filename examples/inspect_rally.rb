@@ -1,11 +1,7 @@
 require '../lib/configuration'
 
-config = @config[:rally]
-
-rally = RallyRestAPI.new(:username => config[:username], :password => config[:password], :version => config[:version])
-
 puts "Using user: #{rally.user.login_name}"
-rally.user.subscription.workspaces.each do |workspace|
+@rally.user.subscription.workspaces.each do |workspace|
   puts workspace.name
   projects = workspace.projects
   #projects = rally.find_all(:project, :workspace => workspace, :pagesize => 100, :fetch => true)
